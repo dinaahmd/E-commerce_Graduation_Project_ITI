@@ -8,7 +8,7 @@ class ProductCategory(models.Model):
 
     def __str__(self):
         return self.name
- 
+
 class Promotion(models.Model):
     start_date = models.DateTimeField()
     slug = models.SlugField(unique=True)
