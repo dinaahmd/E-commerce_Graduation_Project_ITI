@@ -9,7 +9,7 @@ class ProductCategorySerializer(serializers.ModelSerializer):
 class ProductItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProductItem
-        fields = '_all_'
+        fields = '__all__'
         
 class PromotionSerializer(serializers.ModelSerializer):
     class Meta:

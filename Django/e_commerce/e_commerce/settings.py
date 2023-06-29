@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'e_commerce.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME":"e-commerce_db",
+        "NAME":"ecommerce_db",
         "USER" : "postgres",
         "PASSWORD": "1234",
         "HOST" : "localhost",
@@ -146,5 +146,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Base url to serve media files
 MEDIA_URL = '/media/'
+# Path where media is stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
