@@ -32,5 +32,4 @@ class ProductItem(models.Model):
         return self.name
 
 
-        
-    
+

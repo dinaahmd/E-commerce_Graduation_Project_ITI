@@ -15,4 +15,3 @@ class PromotionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Promotion
         fields = ['start_date', 'slug', 'discount_rate', 'end_date', 'promotion_items']
-                        
