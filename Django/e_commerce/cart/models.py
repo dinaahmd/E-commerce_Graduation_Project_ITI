@@ -8,7 +8,7 @@ class Cart(models.Model):
     items = models.ManyToManyField(ProductItem, through='CartItem')
     date_added = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
+    def _str_(self):
         return str(self.user.username)
 
 
@@ -17,9 +17,9 @@ class CartItem(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField(default=1)
     
-    def __str__(self):
+    def _str_(self):
         return f'{self.quantity} x {self.product.name}'
     
     @property
     def total_price(self):
-        return self.product.price * self.quantity 
+        return self.product.price * self.quantity

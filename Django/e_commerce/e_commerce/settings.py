@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     "corsheaders",
     'coupon_management',
     'cart'
-
 ]
 
 REST_FRAMEWORK = {
