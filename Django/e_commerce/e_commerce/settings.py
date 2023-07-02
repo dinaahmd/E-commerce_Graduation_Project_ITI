@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',
     "corsheaders",
     'coupon_management',
-    'cart'
+    'cart',
+    'wishlist',
 ]
 
 REST_FRAMEWORK = {
@@ -139,11 +140,11 @@ WSGI_APPLICATION = 'e_commerce.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
+      "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME":"ecommerce_db",
+        "NAME":"e-commerce_db",
         "USER" : "postgres",
-        "PASSWORD": "1234",
+        "PASSWORD": "123456",
         "HOST" : "localhost",
         "PORT" : "5432"
     }
