@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     'rest_framework_simplejwt.token_blacklist',
     "corsheaders",
-
+    "cart"
 ]
 
 REST_FRAMEWORK = {
@@ -142,7 +142,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME":"ecommerce_db",
         "USER" : "postgres",
-        "PASSWORD": "1234",
+        "PASSWORD": "123",
         "HOST" : "localhost",
         "PORT" : "5432"
     }
